@@ -1,0 +1,14 @@
+Welcome to the Github for Operation Norbury
+https://op-norbury.firebaseapp.com/
+
+* This is a site dedicated to summarizing the evidence of Johnlock in BBC Sherlock
+* Discussing the importance of queer representation in the media
+* Encouraging resistance
+
+
+To Contribute
+1) git clone this repositroy
+2) Make any changes you need
+3) Submit a Pull Request
+
+Deploying to the site requires Firebase, for now I'll do that until we have a better system
