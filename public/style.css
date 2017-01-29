@@ -1,8 +1,60 @@
 body {
-  padding-top: 50px;
-  background-color: rgb(197, 197,195);
+  background-color: white;
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+
+.center-child-text *  {
+  text-align: center;
+}
+
+.relative{
+  position:relative;
+  width:100%;
+}
+.absolute-text{
+  position:absolute;
+  top:0;
+  font-size:36px;
+  color: white;
+  font-family:"vedana";
+  padding:25px 20px;
+  width:100%;
+}
+.absolute-text a{
+  font-size:16px;
+  color:#b92b27;
+}
+
+.inline {
+  display: inline;
+}
+
+nav li a {
+  color: gray;
+}
+
+.nav-pills li.active a {
+  color: black;
+  background-color:white;
+}
+
+.nav-pills li.hover a {
+  color: black;
+  background-color:white;
+}
+
+.feature > img {
+    /*width: 350px;*/
+}
+
+footer {
+  text-align: center;
+  color: gray;
+}
+
+.gray {
+  background-color:gray;
 }

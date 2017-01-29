@@ -17,9 +17,16 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- Firebase for email submissions-->
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+
+    <script src="script.js"></script>
     <link rel="icon"
        type="image/png"
        href="img/icon.png">
@@ -29,8 +36,9 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <img src="img/rainbowband.png"/>
+    <h1 class="inline">Operation Norbury</h1>
+    <nav class="navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,14 +47,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Operation Norbury</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Our Mission</a></li>
-            <li><a href="#bbc">BBC Sherlock</a></li>
-            <li><a href="#canon">Holmes Canon</a></li>
-            <li><a href="#oped">OpEd</a></li>
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">OUR MISSION</a></li>
+            <li><a href="#bbc">HOLMES AND WATSON SINCE 1887</a></li>
+            <li>|</li>
+            <li><a href="#canon">A STUDY IN BBC SHERLOCK</a></li>
+            <li>|</li>
+            <li><a href="#oped">OPINION</a></li>
+            <li>|</li>
+            <li><a href="#contributors">CONTRIBUTORS</a></li>
+            <li>|</li>
+            <li><a href="#contact">CONTACT</a></li>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -54,21 +67,89 @@
     </nav>
 
     <div class="container">
+      <div class="relative">
+        <img class="img-responsive" src="img/flag2.png"/>
+        <p class="absolute-text">"Openness may not completely disarm prejudice,
+            but it’s a good place to start."
+          </br>
+          --Jason Collins</p>
+    </div>
 
-      <div class="starter-template">
-        <h1>Operation Norbury</h1>
-          <blockquote class="blockquote">
-            <p class="mb-0">If you ever think I’m becoming a bit full of myself, cocky or overconfident, just say the word ‘Norbury’ to me would you. Just that. I’d be very grateful.</p>
-            <footer class="blockquote-footer">Sherlock <cite title="Source Title">The Six Thatchers</cite></footer>
-          </blockquote>
+    <div class="feature col-md-4">
+      <img class="img-responsive" src="img/feature1.jpg"/>
+      <p>FEBRUARY 15, 2017 | HOLMES and WATSON</p>
+      <h5>Feature Article I</h5>
+      <p>Byline Goes Here
+        <br/>
+        This is a feature story, here’s some intro to let your reader know what this post is about.
+        <br/># acd canon # queer reading
+      </p>
+    </div>
+    <div class="feature col-md-4">
+      <img class="img-responsive" src="img/feature2.jpg"/>
+      <p>FEBRUARY 15, 2017 | BBC SHERLOCK</p>
+      <h5>Feature Article II</h5>
+      <p>Byline Goes Here
+        <br/>
+        This is a feature story, here’s some intro to let your reader know what this post is about.
+        <br/># bbc sherlock # romantic tropes
+      </p>
+    </div>
+    <div class="feature col-md-4">
+      <img class="img-responsive" src="img/feature3.jpg"/>
+      <p>FEBRUARY 15, 2017 | OPINION</p>
+      <h5>Feature Article II</h5>
+      <p>Byline Goes Here
+        <br/>
+        This is a feature story, here’s some intro to let your reader know what this post is about.
+        <br/># op-ed # author name
+      </p>
+    </div>
 
-          <p class="lead">Whether you've been a passionate member of The Johnlock Conspiracy (TJLC) for years or this is your first time, welcome.<br/>
-            BBC Sherlock has queerbaited its fans, using their passion and enthusiasm to drive revenue and views.<br/>
-            We're here to get educated and get ouraged together.  <a href="https://twitter.com/search?q=norbury">#Norbury</a></p>
+    <div class="col-xs-12 col-sm-6 col-lg-6 col-md-offset-0
+" id="articles">
+      <div class="article">
+        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+        <h3>Article</h3>
+        <p>Byline Goes Here<br/>
+          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+        </p>
       </div>
-      <img class="img-responsive" src="img/background.png"/>
+      <div class="article">
+        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+        <h3>Article</h3>
+        <p>Byline Goes Here<br/>
+          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+        </p>
+      </div>
 
+      <div class="article">
+        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+        <h3>Article</h3>
+        <p>Byline Goes Here<br/>
+          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+        </p>
+      </div>
+
+    </div>
+    <div class="gray col-xs-6 col-lg-4">
+        <div class="signup center-child-text">
+          <h3 class="signup-title">Sign Up To Receive Updates</h2>
+          <p id="signup-success" class="text-success"></p>
+          <p id="signup-error" class="text-danger"></p>
+          <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+              <input class="form-control" name="email" type="email" placeholder="Your email" required>
+              <button class="btn btn-success" id="signup-button" type="submit" >Join now</button>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="gray">
+        <h3>Additional Resouces</h3>
+        <p>This is a text widget, which allows you to add text or HTML to your sidebar. You can use them to display text, links, images, HTML, or a combination of these.</p>
+      </div> -->
     </div><!-- /.container -->
+
+    <Br/><BR/><br/>
 
 
     <!-- Bootstrap core JavaScript
@@ -79,5 +160,6 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <footer>Operation Norbury is a project by the fans for the fans. Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.</footer>
   </body>
 </html>
