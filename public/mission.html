@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Firebase for email submissions-->
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="script.js"></script>
+    <link rel="icon"
+       type="image/png"
+       href="img/icon.png">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <img src="img/rainbowband.png"/>
+    <h1 class="inline">Operation Norbury</h1>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="mission.html">OUR MISSION</a></li>
+            <li><a href="canon.html">HOLMES AND WATSON SINCE 1887</a></li>
+            <li><a href="bbc.html">A STUDY IN BBC SHERLOCK</a></li>
+            <li><a href="opinion.html">OPINION</a></li>
+            <li><a href="contributors.html">CONTRIBUTORS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header-image">
+        <img class="img-responsive" src="img/flag.jpg"/>
+        <p class="header-text">"The truth is rarely pure and never simple."<br/>
+          <span id="attribution">&mdash;Oscar Wilde</span></p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-8 col-md-offset-0
+    " id="articles">
+        <h4 class="bold">Mission statement goes here this is a place holder. It could be short, or long, doesn’t really matter. Mission statement goes here this is a place holder. It could be short, or long, doesn’t really matter. Mission statement goes here this is a place holder. It could be short, or long, doesn’t really matter.</h4>
+
+        <p>Some background information goes here. How Operation Norbury comes about, etc.. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+        <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="gray col-xs-6 col-lg-4">
+          <div class="signup center-child-text">
+            <h3 class="signup-title">Sign Up To Receive Updates</h2>
+            <p id="signup-success" class="text-success"></p>
+            <p id="signup-error" class="text-danger"></p>
+            <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+                <input class="form-control" name="email" type="email" placeholder="Your email" required>
+                <button class="btn btn-success" id="signup-button" type="submit" >Join now</button>
+            </form>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
