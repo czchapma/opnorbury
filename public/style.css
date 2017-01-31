@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 .starter-template {
   padding: 40px 15px;
@@ -8,6 +9,10 @@ body {
 
 .center-child-text *  {
   text-align: center;
+}
+
+li+li {
+  border-left: 1px solid gray;
 }
 
 .relative{
@@ -36,14 +41,21 @@ nav li a {
   color: gray;
 }
 
-.nav-pills li.active a {
-  color: black;
-  background-color:white;
+.nav>li>a {
+  padding: 5px 15px;
 }
 
-.nav-pills li.hover a {
-  color: black;
-  background-color:white;
+.nav-pills li.active a {
+  color: black !important;
+  background-color:white !important;
+}
+
+ul.nav a:hover {
+  color: black !important;
+  background-color:white !important;
+  }
+
+.nav-pills li.focus a {
 }
 
 .feature > img {
@@ -57,4 +69,37 @@ footer {
 
 .gray {
   background-color:gray;
+}
+
+
+hr {
+    display: block;
+    margin-top: 25pfx;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+    color: gray;
+}
+
+.header-image {
+    position:relative;
+    padding-bottom: 25px;
+}
+
+.header-text {
+    font-family: 'Roboto Slab', serif;
+    left: 20px;
+    position:absolute;
+    top: 33%;
+    bottom: 33%;
+    color: white;
+    width: 100%;
+    font-size: 26px;
+}
+
+#attribution {
+  font-size: 15px;
 }

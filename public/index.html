@@ -26,6 +26,10 @@
     <!-- Firebase for email submissions-->
     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <script src="script.js"></script>
     <link rel="icon"
        type="image/png"
@@ -52,13 +56,9 @@
           <ul class="nav nav-pills">
             <li class="active"><a href="#">OUR MISSION</a></li>
             <li><a href="#bbc">HOLMES AND WATSON SINCE 1887</a></li>
-            <li>|</li>
             <li><a href="#canon">A STUDY IN BBC SHERLOCK</a></li>
-            <li>|</li>
             <li><a href="#oped">OPINION</a></li>
-            <li>|</li>
             <li><a href="#contributors">CONTRIBUTORS</a></li>
-            <li>|</li>
             <li><a href="#contact">CONTACT</a></li>
 
           </ul>
@@ -67,80 +67,87 @@
     </nav>
 
     <div class="container">
-      <div class="relative">
-        <img class="img-responsive" src="img/flag2.png"/>
-        <p class="absolute-text">"Openness may not completely disarm prejudice,
+      <div class="header-image">
+        <img class="img-responsive" src="img/flag.jpg"/>
+        <p class="header-text">"Openness may not completely disarm prejudice,<br/>
             but it’s a good place to start."
           </br>
-          --Jason Collins</p>
+          <span id="attribution">&mdash;Jason Collins</span></p>
     </div>
 
-    <div class="feature col-md-4">
-      <img class="img-responsive" src="img/feature1.jpg"/>
-      <p>FEBRUARY 15, 2017 | HOLMES and WATSON</p>
-      <h5>Feature Article I</h5>
-      <p>Byline Goes Here
-        <br/>
-        This is a feature story, here’s some intro to let your reader know what this post is about.
-        <br/># acd canon # queer reading
-      </p>
-    </div>
-    <div class="feature col-md-4">
-      <img class="img-responsive" src="img/feature2.jpg"/>
-      <p>FEBRUARY 15, 2017 | BBC SHERLOCK</p>
-      <h5>Feature Article II</h5>
-      <p>Byline Goes Here
-        <br/>
-        This is a feature story, here’s some intro to let your reader know what this post is about.
-        <br/># bbc sherlock # romantic tropes
-      </p>
-    </div>
-    <div class="feature col-md-4">
-      <img class="img-responsive" src="img/feature3.jpg"/>
-      <p>FEBRUARY 15, 2017 | OPINION</p>
-      <h5>Feature Article II</h5>
-      <p>Byline Goes Here
-        <br/>
-        This is a feature story, here’s some intro to let your reader know what this post is about.
-        <br/># op-ed # author name
-      </p>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-6 col-md-offset-0
-" id="articles">
-      <div class="article">
-        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
-        <h3>Article</h3>
-        <p>Byline Goes Here<br/>
-          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+    <div>
+      <div class="feature col-md-4">
+        <img class="img-responsive" src="img/feature1.jpg"/>
+        <p>FEBRUARY 15, 2017 | HOLMES and WATSON</p>
+        <h5>Feature Article I</h5>
+        <p>Byline Goes Here
+          <br/>
+          This is a feature story, here’s some intro to let your reader know what this post is about.
+          <br/># acd canon # queer reading
         </p>
       </div>
-      <div class="article">
-        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
-        <h3>Article</h3>
-        <p>Byline Goes Here<br/>
-          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+      <div class="feature col-md-4">
+        <img class="img-responsive" src="img/feature2.jpg"/>
+        <p>FEBRUARY 15, 2017 | BBC SHERLOCK</p>
+        <h5>Feature Article II</h5>
+        <p>Byline Goes Here
+          <br/>
+          This is a feature story, here’s some intro to let your reader know what this post is about.
+          <br/># bbc sherlock # romantic tropes
         </p>
       </div>
-
-      <div class="article">
-        <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
-        <h3>Article</h3>
-        <p>Byline Goes Here<br/>
-          This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+      <div class="feature col-md-4">
+        <img class="img-responsive" src="img/feature3.jpg"/>
+        <p>FEBRUARY 15, 2017 | OPINION</p>
+        <h5>Feature Article II</h5>
+        <p>Byline Goes Here
+          <br/>
+          This is a feature story, here’s some intro to let your reader know what this post is about.
+          <br/># op-ed # author name
         </p>
       </div>
-
     </div>
-    <div class="gray col-xs-6 col-lg-4">
-        <div class="signup center-child-text">
-          <h3 class="signup-title">Sign Up To Receive Updates</h2>
-          <p id="signup-success" class="text-success"></p>
-          <p id="signup-error" class="text-danger"></p>
-          <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
-              <input class="form-control" name="email" type="email" placeholder="Your email" required>
-              <button class="btn btn-success" id="signup-button" type="submit" >Join now</button>
-          </form>
+
+    <br/>
+    <hr/>
+
+    <div>
+      <div class="col-xs-12 col-sm-6 col-lg-8 col-md-offset-0
+  " id="articles">
+        <div class="article">
+          <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+          <h3>Article</h3>
+          <p>Byline Goes Here<br/>
+            This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+          </p>
+        </div>
+        <div class="article">
+          <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+          <h3>Article</h3>
+          <p>Byline Goes Here<br/>
+            This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+          </p>
+        </div>
+
+        <div class="article">
+          <p>JANUARY 22, 2017 | BBC SHERLOCK</p>
+          <h3>Article</h3>
+          <p>Byline Goes Here<br/>
+            This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image. This is a regular post, here’s some intro to let your reader know what this post is about. These intro could be a bit longer since there is no feature image.
+          </p>
+        </div>
+
+      </div>
+      <div class="gray col-xs-6 col-lg-4">
+          <div class="signup center-child-text">
+            <h3 class="signup-title">Sign Up To Receive Updates</h2>
+            <p id="signup-success" class="text-success"></p>
+            <p id="signup-error" class="text-danger"></p>
+            <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+                <input class="form-control" name="email" type="email" placeholder="Your email" required>
+                <button class="btn btn-success" id="signup-button" type="submit" >Join now</button>
+            </form>
+          </div>
         </div>
       </div>
       <!-- <div class="gray">
